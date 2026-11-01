@@ -554,7 +554,7 @@ nav a:hover::after {
   gap: 12px;
 }
 
-/* Nettbrett og mobil
+/* Nettbrett og mobil */
 @media (max-width: 760px) {
   .site-header {
     grid-template-columns: 1fr auto;
@@ -610,98 +610,5 @@ nav a:hover::after {
 
   .gallery-bottom {
     gap: 16px;
-  } */
-
-/* Bestillingsside
-.booking-page {
-  min-height: 65vh;
-  padding: 54px 20px 70px;
-  background: radial-gradient(ellipse at top, #fffdf0 0%, var(--cream) 70%);
+  }
 }
-
-.booking-intro {
-  max-width: 650px;
-  margin: 0 auto 28px;
-  text-align: center;
-}
-
-.eyebrow {
-  margin: 0 0 8px;
-  color: #7c805d;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.16em;
-}
-
-.booking-intro h1 {
-  margin: 0 0 10px;
-  font-family: "Amarante", Georgia, serif;
-  font-size: clamp(32px, 5vw, 46px);
-}
-
-.booking-intro p:last-child {
-  margin: 0;
-  line-height: 1.6;
-}
-
-.booking-form {
-  width: min(100%, 620px);
-  margin: 0 auto;
-  padding: clamp(22px, 5vw, 42px);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  border: 1px solid rgba(117, 126, 83, 0.18);
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.68);
-  box-shadow: 0 12px 35px rgba(70, 70, 40, 0.08);
-}
-
-.form-field {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-
-.form-field label {
-  font-size: 14px;
-  font-weight: 800;
-}
-
-.form-field input,
-.form-field select {
-  width: 100%;
-  min-height: 46px;
-  padding: 10px 12px;
-  border: 1px solid #c7c9ad;
-  border-radius: 8px;
-  background: #fffef8;
-  color: var(--ink);
-  font: inherit;
-}
-
-.form-field input:focus,
-.form-field select:focus {
-  outline: 3px solid rgba(219, 163, 110, 0.3);
-  border-color: var(--orange);
-}
-
-.submit-button {
-  grid-column: 1 / -1;
-  justify-self: center;
-  cursor: pointer;
-}
-
-.form-note {
-  grid-column: 1 / -1;
-  margin: 0;
-  color: #686858;
-  font-size: 12px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.booking-footer p,
-.booking-footer > a:last-child {
-  font-size: 12px;
-} */
