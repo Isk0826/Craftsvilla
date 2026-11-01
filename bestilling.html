@@ -37,7 +37,7 @@
 
     <nav>
       <ul id="nav-row">
-        <li><a href="#hjem">Hjem</a></li>
+        <li><a href="index.html">Hjem</a></li>
         <li><a href="#about">Om oss</a></li>
         <li><a href="#workshops">Workshops</a></li>
         <li><a href="#gallery">Galleri</a></li>
@@ -63,9 +63,9 @@
 
       <section class="booking-form">
         <h1>Bestillingsskjema</h1>
-        <form action="">
+        <form id="booking-form" action="">
           <label for="name">Navn</label>
-          <input type="name" id="name" placeholder="Ditt navn" required />
+          <input type="text" id="name" placeholder="Ditt navn" required />
 
           <label for="email">E-post</label>
           <input type="email" id="email" placeholder="din@epost.no" required />
@@ -83,14 +83,19 @@
 
           <label for="deltakere">Deltakere</label>
           <input
-            type="deltakere"
+            type="number"
             id="deltakere"
             placeholder="Antall deltakere"
+            min="1"
             required
           />
 
           <button class="booking-button" type="submit">Send inn</button>
         </form>
+
+        <div id="success-message" class="success-message" role="alert">
+          Takk for din bestilling!
+        </div>
       </section>
     </main>
 
@@ -126,5 +131,17 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const form = document.getElementById("booking-form");
+      const successMessage = document.getElementById("success-message");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        successMessage.classList.add("show");
+        form.reset();
+      });
+    </script>
   </body>
 </html>
